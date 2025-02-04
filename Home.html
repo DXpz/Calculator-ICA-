@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Índice de Calidad del Agua (ICA)</title>
+    <link rel="shortcut icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_del_Gobierno_de_El_Salvador_%282019%29.svg/376px-Logo_del_Gobierno_de_El_Salvador_%282019%29.svg.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="xd"> <img src="https://www.ambiente.gob.sv/wp-content/themes/instituciones/img/LOGOMARN-B.png"
+                alt="Gobierno de El Salvador" width="350px" height="150px"></div><br>
+        <h1>Calculadora de Índice de Calidad del Agua (ICA)</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="https://www.ambiente.gob.sv/">MARN</a></li>
+                <li><a href="https://www.ambiente.gob.sv/guia-de-servicios/">Services</a></li>
+                <li><a href="https://oir.ambiente.gob.sv/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="notificacion" class="notificacion"></div>
+    <div class="container">
+        <h2>Ingresar Datos</h2>
+        <form id="icaForm">
+            <label for="coliformes">Coliformes Fecales (NMP/100mL):</label>
+            <input type="number" id="coliformes" min="0" max="1000000" required>
+
+            <label for="ph">pH:</label>
+            <input type="number" step="0.01" id="ph" min="0" max="14" required>
+
+            <label for="dbo5">DBO5 (mg/L):</label>
+            <input type="number" step="0.01" id="dbo5" min="0" max="1000" required>
+
+
+            <label for="nitratos">Nitratos (mg/L):</label>
+            <input type="number" step="0.01" id="nitratos" min="0" max="500" required>
+
+            <label for="fosfatos">Fosfatos (mg/L):</label>
+            <input type="number" step="0.01" id="fosfatos" min="0" max="50" required>
+
+            <label for="temperatura">Cambio de Temperatura (°C):</label>
+            <input type="number" step="0.01" id="temperatura" min="-50" max="100" required>
+
+            <label for="turbidez">Turbidez (NTU):</label>
+            <input type="number" step="0.01" id="turbidez" min="0" max="1000" required>
+
+            <label for="solidos">Sólidos Disueltos Totales (mg/L):</label>
+            <input type="number" step="0.01" id="solidos" min="0" max="5000" required>
+
+
+            <label for="oxigeno">Saturación de Oxígeno Disuelto (%):</label>
+            <input type="number" step="0.01" id="oxigeno" min="0" max="200" required>
+
+            <button type="button" onclick="calcularICA()">Calcular ICA</button>
+        </form>
+        <div class="result" id="resultado"></div>
+
+
+    </div>
+    <h2>Gráficas de Parámetros</h2>
+    <div id="chartsContainer" class="charts-container"></div>
+    <script src="component.js"></script>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <h3>Ministerio De Medio Ambiente Y Recursos Naturales</h3>
+            <ul class="contact-info">
+                <li>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>KILÓMETRO 5½ CARRETERA A SANTA TECLA, CALLE Y COLONIA LAS MERCEDES, EDIFICIOS MARN SAN
+                        SALVADOR, EL SALVADOR, CENTROAMÉRICA</span>
+                </li>
+                <li>
+                    <i class="fas fa-phone"></i>
+                    <span>2132-6276</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span>medioambiente@ambiente.gob.sv</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Logo_del_Gobierno_de_El_Salvador_%282019%29.svg/376px-Logo_del_Gobierno_de_El_Salvador_%282019%29.svg.png"
+                alt="Gobierno de El Salvador">
+        </div>
+
+        <div class="footer-right">
+            <div class="social-links">
+                <h3>Únete a nuestra comunidad</h3>
+                <div class="marca"><img src="https://avatars.githubusercontent.com/u/48604327?v=4" alt="marca"
+                        width="100px" height="60px"></div>
+            </div>
+            <nav>
+                <ul class="footer-nav">
+                    <li><a href="https://www.ambiente.gob.sv/mapa-del-sitio/">Mapa del Sitio</a></li>
+                    <li><a
+                            href="https://cidoc.ambiente.gob.sv/documentos/carta-de-derechos-para-los-consumidores-y-usuarios-de-servicios-del-ministerio-de-medio-ambiente-y-recursos-naturales/"><br>Política
+                            Web</a></li>
+                    <li><a href="https://www.ambiente.gob.sv/preguntas-frecuentes/"><br>Preguntas Frecuentes</a></li>
+                    <li><a
+                            href="https://bibliotecaambiental.ambiente.gob.sv/documentos/carta-de-derechos-de-los-consumidores-y-usuarios-de-los-servicios-del-ministerio-de-medio-ambiente-y-recursos-naturales-2/"><br>Carta
+                            de Derechos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+</html>
