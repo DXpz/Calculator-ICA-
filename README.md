@@ -1,8 +1,8 @@
-![Logo HTML](https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg)
-![Logo CSS](https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg)
-![Logo JavaScript](https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg)
-
-
+<p style="display: flex; align-items: center; gap: 20px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="Logo HTML" style="width: 50px; height: auto;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="Logo CSS" style="width: 50px; height: auto;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" alt="Logo JavaScript" style="width: 50px; height: auto;">
+</p>
 
 # Hoja metodológica para el cálculo del Índice de Calidad de Agua (ICA)
 
