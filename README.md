@@ -1,4 +1,4 @@
-#Hoja metodológica para el cálculo del Índice de Calidad de Agua (ICA)
+# Hoja metodológica para el cálculo del Índice de Calidad de Agua (ICA)
 
 ## Nombre del indicador
 
