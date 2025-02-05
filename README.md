@@ -4,6 +4,9 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg" width="80" style="margin: 0 15px;">
 </div>
 
+> [!IMPORTANT]
+> Para poder visualizar nuestra calculadora sin ningun problema se tienen que descargar los 3 archivos de la carpeta (ICA).
+
 # Hoja metodológica para el cálculo del Índice de Calidad de Agua (ICA)
 
 ## Nombre del indicador
